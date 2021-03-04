@@ -29,22 +29,18 @@ namespace API
         public Startup(IConfiguration config)
         {
             _config = config;
-
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {          
             services.AddApplicationServices(_config);
-
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
             });            
             services.AddControllers();
             services.AddCors();
-
             services.AddIdentityServices(_config);
         }
 
@@ -57,17 +53,11 @@ namespace API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
-
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
-
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
