@@ -22,7 +22,7 @@ namespace API
             try
             {
                 var context = services.GetRequiredService<DataContext>();
-                await context.Database.EnsureDeletedAsync();
+                // await context.Database.EnsureDeletedAsync();
                 await context.Database.MigrateAsync();
                 await Seed.SeedUsers(context);
             }
