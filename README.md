@@ -7,11 +7,10 @@ This is not my project, it's based on a udemy course "[Build an app with ASPNET 
 # Goals
 
 1. complete the course
-2. tweak the given pattern a little bit
-3. general refactoring
-4. implement unit tests - API
-5. implement unit tests - Client
-6. implement integration tests (optional)
-7. build a frontend with vuejs (eventually)
-8. build a frontend with react (eventually)
-9. build a frontend with blazor (eventually)
+2. general refactoring
+3. implement unit tests - API
+4. implement unit tests - Client
+5. implement integration tests (optional)
+6. build a frontend with vuejs (eventually)
+7. build a frontend with react (eventually)
+8. build a frontend with blazor (eventually)
