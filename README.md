@@ -11,6 +11,3 @@ This is not my project, it's based on a udemy course "[Build an app with ASPNET 
 3. implement unit tests - API
 4. implement unit tests - Client
 5. implement integration tests (optional)
-6. build a frontend with vuejs (eventually)
-7. build a frontend with react (eventually)
-8. build a frontend with blazor (eventually)
