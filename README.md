@@ -6,8 +6,7 @@ This is not my project, it's based on a udemy course "[Build an app with ASPNET 
 
 # Goals
 
-1. complete the course :heavy_check_mark:
-- https://enigmatic-bayou-88343.herokuapp.com/
+1. complete the course
 2. general refactoring
 3. implement unit tests - API
 4. implement unit tests - Client
